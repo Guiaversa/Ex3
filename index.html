@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/stykes.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label>Tração:</label>
+            <input type="radio" id="FWD" name="tracao" value="FWD" required>
+            <label for="FWD">FWD</label>
+            <input type="radio" id="RWD" name="tracao" value="RWD" required>
+            <label for="female">RWD</label><br>
+
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca" required>
+                <option value="volks">Volks</option>
+                <option value="Fiat">Fiat</option>
+                <option value="chev">chev</option>
+
+            </select><br>
+
+            <input type="checkbox" id="turbo" name="turbo">
+            <label for="turbo">Turbo</label><br>
+
+            <button type="button" onclick="submitForm()">Enviar</button>
+        </form>
+
+        <div id="loading">Carregando...</div>
+        <table id="responseTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tração</th>
+                    <th>Marca</th>
+                    <th>Turbo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="src/index.js"></script>
+
+</html>

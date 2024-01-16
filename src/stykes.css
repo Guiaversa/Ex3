@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#body {
+    font-family: Arial, sans-serif;
+}
+
+#form {
+    margin-bottom: 20px;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#loading {
+    display: none;
+}
